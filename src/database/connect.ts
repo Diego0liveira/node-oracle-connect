@@ -1,41 +1,46 @@
-
-'use strict';
 import oracledb from 'oracledb'
-import { user, password, connectString, externalAuth } from './dbconfig';
+require('dotenv/config');
 
+let connection: oracledb.Connection
 
-async function run() {
+export default async function Open(sql: string, binds: Array<any>, autoCommit?: Boolean) {
 
-    let connection: oracledb.Connection
-  
+    let result;
+
     try {
 
       console.log('--> Starting database connection.');
 
-      console.log(`- USER:  ${user}`)
-      console.log(`- PASSWORD: ${password}`)
-      console.log(`- CONNECT STRING: ${connectString}`)
-      console.log(`- EXTERNAL AUTH: ${externalAuth}`)
-      
+      //console.log(`- USER:  ${process.env.NODE_ORACLEDB_USER}`)
+      //console.log(`- PASSWORD: ${process.env.NODE_ORACLEDB_PASSWORD}`)
+      //console.log(`- CONNECT STRING: ${process.env.NODE_ORACLEDB_CONNECTIONSTRING}`)
+
+
+
       connection = await oracledb.getConnection({
-          user          : user,
-          password      : password,
-          connectString : connectString
+          user          : process.env.NODE_ORACLEDB_USER,
+          password      : process.env.NODE_ORACLEDB_PASSWORD,
+          connectString : process.env.NODE_ORACLEDB_CONNECTIONSTRING
         });
   
       console.log('--> Connection was successful!');
+
+      result = await connection.execute(sql, binds)
+      connection.release;
   
     } catch (err) {
-      console.error(err);
+      console.error(`--> Error database connection: ${err}`);
     } finally {
       if (connection) {
         try {
           await connection.close();
+          console.log('--> Connection closed successfully');
         } catch (err) {
-          console.error(err);
+          console.error(`--> Error when disconnecting from the database: ${err}`);
         }
       }
     }
+
+    return result;
   }
-  
-  run();
+
