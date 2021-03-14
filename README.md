@@ -21,14 +21,14 @@ https://www.oracle.com/br/database/technologies/instant-client/downloads.html
 <li><h3>executar os seguintes comandos no terminal do VSCode aberto na raiz do projeto:</h3></li>
 
 - [x] export OCI_INC_DIR="caminho declarado na variavel de ambiente"
-echo $OCI_INC_DIR
+  <p>echo $OCI_INC_DIR</p>
 
 - [x] export OCI_LIB_DIR="caminho declarado na variavel de ambiente"
-echo $OCI_LIB_DIR
+  <p>echo $OCI_LIB_DIR</p>
 
 - [x] export LD_LIBRARY_PATH="caminha da raiz instantcliente"
-echo $LD_LIBRARY_PATH
-
+  <p>cho $LD_LIBRARY_PATH</p>
+  
 <li><h3>executar o comando npm install ou yarn add</h3></li>
 
 <b>OBS:</b> A instalação dos pacotes referentes ao oracledb somente devem ser feitas após a execução de todos os processos descritos acima.
