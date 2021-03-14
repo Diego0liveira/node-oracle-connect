@@ -6,7 +6,7 @@
 <li><h3>Fazer o dowload do instantcliente de acordo com o SO e versão do Oracle através da segunite URL:</h3></li>
 https://www.oracle.com/br/database/technologies/instant-client/downloads.html
 
-<b>OBS:</b> Pprecisam ser feito o dowload dos pacotes BASIC e SDK e extrair ambos em um diretório do tipo: "C:\oracle\instantclient"
+<b>OBS:</b> Precisam ser feitos os dowloads dos pacotes BASIC e SDK e extrair ambos em um diretório do tipo: "C:\oracle\instantclient"
 
 <li><h3>Criar as seguintes variáveis de ambiente:</h3>
 
