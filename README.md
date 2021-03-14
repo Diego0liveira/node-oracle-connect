@@ -31,5 +31,5 @@ echo $LD_LIBRARY_PATH
 
 <li><h3>executar o comando npm install ou yarn add</h3></li>
 
-<b>OBS:</b> A instalação dos pacotes referentes ao oracledb somente deve ser feita após a execução de todos os processos descritos acima.
+<b>OBS:</b> A instalação dos pacotes referentes ao oracledb somente devem ser feitas após a execução de todos os processos descritos acima.
 </ol>
