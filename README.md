@@ -1,4 +1,10 @@
-<img src="https://techcrunch.com/wp-content/uploads/2010/07/github-logo.png?w=512" height='150' width='150' />
+<div>
+  <img src="https://techcrunch.com/wp-content/uploads/2010/07/github-logo.png?w=512" height='150' width='150' />
+
+  <img src="https://github.com/Diego0liveira/node-oracle-connect/blob/master/node.png" height='150' width='200' />
+    
+  <img src="https://github.com/Diego0liveira/node-oracle-connect/blob/master/oracle.png" height='150' width='240' />
+</div>
 
 <h1>Configurações de conexão do Banco de dados Oracle em uma aplicação Node.js</h1>
 
