@@ -6,7 +6,7 @@
    <img src="https://github.com/Diego0liveira/node-oracle-connect/blob/master/oracle.png" height='150' width='300' />  
 </div>
 
-<h1>Configurações de conexão do Banco de dados Oracle em uma aplicação Node.js</h1>
+<h1>Configurações de conexão com o Banco de dados Oracle em uma aplicação Node.js</h1>
 
 <ol>
 <li><h3>Fazer o dowload do instantcliente de acordo com o SO e versão do Oracle através da segunite URL:</h3></li>
