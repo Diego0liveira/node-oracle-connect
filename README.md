@@ -1,8 +1,8 @@
 <div>
  <img src="https://techcrunch.com/wp-content/uploads/2010/07/github-logo.png?w=512" height='150' width='150' />  
-        <div>&#160;</div>
+        
   <img src="https://github.com/Diego0liveira/node-oracle-connect/blob/master/node.png" height='140' width='200' />  
-        <div>&#160;</div>
+        
    <img src="https://github.com/Diego0liveira/node-oracle-connect/blob/master/oracle.png" height='150' width='300' />  
 </div>
 
